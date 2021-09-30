@@ -1,0 +1,50 @@
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\000lienhong\test0329\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\000lienhong\test0520_40io\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\Test_40Pin_Machine\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\james\Desktop\Lien_Hong\C# Data\Test Send Cmd\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

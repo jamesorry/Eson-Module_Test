@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMI_CommandTest", "HMI_Protocol_Test\HMI_CommandTest.csproj", "{AFC41B5E-3E08-4C81-8CB5-D88C755ABE3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFC41B5E-3E08-4C81-8CB5-D88C755ABE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC41B5E-3E08-4C81-8CB5-D88C755ABE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC41B5E-3E08-4C81-8CB5-D88C755ABE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC41B5E-3E08-4C81-8CB5-D88C755ABE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C75C08EC-F29B-4764-B6BE-6435864C8F6A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+C:\Users\johns\Desktop\聯鴻LH\HMI_Protocol_Test\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.csproj.AssemblyReference.cache
+C:\Users\johns\Desktop\聯鴻LH\HMI_Protocol_Test\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.main.resources
+C:\Users\johns\Desktop\聯鴻LH\HMI_Protocol_Test\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.Properties.Resources.resources
+C:\Users\johns\Desktop\聯鴻LH\HMI_Protocol_Test\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.csproj.GenerateResource.cache
+C:\Users\johns\Desktop\聯鴻LH\HMI_Protocol_Test\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.csproj.CoreCompileInputs.cache
+C:\Users\johns\Desktop\聯鴻LH\HMI_Protocol_Test\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.ChooseMode.resources

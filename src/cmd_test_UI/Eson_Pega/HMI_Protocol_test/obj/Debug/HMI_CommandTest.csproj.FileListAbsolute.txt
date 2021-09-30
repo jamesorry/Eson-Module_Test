@@ -1,0 +1,22 @@
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\bin\Debug\HMI_Protocol_Test.exe.config
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\bin\Debug\HMI_Protocol_Test.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\bin\Debug\HMI_Protocol_Test.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_CommandTest.csproj.AssemblyReference.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\Eson_Pega.ChooseMode.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\Eson_Pega.main.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.Properties.Resources.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_CommandTest.csproj.GenerateResource.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_CommandTest.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\CODE For HRM Case\EsonHRM_TypeVertical\UI_test\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\bin\Debug\HMI_Protocol_Test.exe.config
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\bin\Debug\HMI_Protocol_Test.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\bin\Debug\HMI_Protocol_Test.pdb
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_CommandTest.csproj.AssemblyReference.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\Eson_Pega.ChooseMode.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\Eson_Pega.main.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.Properties.Resources.resources
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_CommandTest.csproj.GenerateResource.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_CommandTest.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.exe
+C:\Users\james\Desktop\Lien_Hong\Eson\Eson_Module Test\src\cmd_test_UI\Eson_Pega\HMI_Protocol_Test\obj\Debug\HMI_Protocol_Test.pdb
