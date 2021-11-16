@@ -111,6 +111,7 @@ void NormalProcess();
 void Counter_reset();
 void Counter_count();
 void buzzerPlay(int playMS);
+void Btn345_Process();
 
 #endif	//_MAIN_PROCESS_H_
 

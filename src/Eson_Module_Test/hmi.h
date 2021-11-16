@@ -4,7 +4,7 @@
 #include "Arduino.h"
 #include "SoftwareSerial.h"
 
-#define	VERSTR	"2021092602"
+#define	VERSTR	"2021111601"
 
 #define VENDOR	"LienHong"
 

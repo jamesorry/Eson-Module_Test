@@ -66,6 +66,7 @@ void MainProcess_Init()
         runtimedata.Workindex[i] = 0;    
     for(i=0; i< WORKINDEX_TOTAL; i++)
         runtimedata.preWorkindex[i] = -1;
+    Device_Stop();
 }
 
 void ReadDigitalInput()
@@ -241,188 +242,13 @@ void MainProcess_Task()
             break;
         case RUN_MODE_NORMAL:
             NormalProcess();
+            Btn345_Process();
             break;
     }   
     
 }
 
-
-#if 0
-void NormalProcess()
-{
-    if(runtimedata.preWorkindex[WORKINDEX_NORMAL] != runtimedata.Workindex[WORKINDEX_NORMAL])
-    {
-        runtimedata.preWorkindex[WORKINDEX_NORMAL] = runtimedata.Workindex[WORKINDEX_NORMAL];
-        DEBUG("WORKINDEX_NORMAL: " + String(runtimedata.preWorkindex[WORKINDEX_NORMAL]));
-    }
-    switch(runtimedata.Workindex[WORKINDEX_NORMAL])
-    {
-        case 0:
-            Device_Stop();
-            for(int i=0; i<3; i++)
-                runtimedata.Sensor_345_State[i] = 0;
-            if(!getInput(IN1_1_SWITCH) && !runtimedata.Virtual_Btn[IN1_1_SWITCH])
-            {
-                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                runtimedata.system_status = Normal_Free;
-            }
-            break;
-        case 10:
-            if(getInput(IN10_3_SENEOR) && getInput(IN11_4_SENEOR) && getInput(IN12_5_SENEOR))
-                if(getInput(IN1_1_SWITCH) || runtimedata.Virtual_Btn[IN1_1_SWITCH])
-                {
-                    runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                    runtimedata.system_status = Normal_Btn_1;
-                }
-            break;
-        case 20:
-            if(getInput(IN1_1_SWITCH) || runtimedata.Virtual_Btn[IN1_1_SWITCH]){
-                setOutput(OUT1_SOL1_BACK, 0);
-                setOutput(OUT0_SOL1_FRONT, 1);
-            }
-            else{
-                setOutput(OUT0_SOL1_FRONT, 0);
-                setOutput(OUT1_SOL1_BACK, 1);
-            }
-            if(getInput(IN6_1_FRONT_SENEOR) && !getInput(IN7_1_BACK_SENEOR)){
-                if(!getInput(IN1_1_SWITCH) && !runtimedata.Virtual_Btn[IN1_1_SWITCH])
-                {
-                    setOutput(OUT0_SOL1_FRONT, 0);
-                    setOutput(OUT1_SOL1_BACK, 0);
-                    runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                    runtimedata.system_status = Normal_Btn_2;
-                }
-            }
-            break;
-        case 30:
-            if(getInput(IN2_2_SWITCH) || runtimedata.Virtual_Btn[IN2_2_SWITCH]){
-                setOutput(OUT3_SOL2_BACK, 0);
-                setOutput(OUT2_SOL2_FRONT, 1);
-            }
-            else{
-                setOutput(OUT2_SOL2_FRONT, 0);
-                setOutput(OUT3_SOL2_BACK, 1);
-            }
-            if(getInput(IN8_2_FRONT_SENEOR) && !getInput(IN9_2_BACK_SENEOR)){
-                if(!getInput(IN2_2_SWITCH) && !runtimedata.Virtual_Btn[IN2_2_SWITCH])
-                {
-                    setOutput(OUT2_SOL2_FRONT, 0);
-                    setOutput(OUT3_SOL2_BACK, 0);
-                    runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                }
-            }
-            break;
-        case 40:
-            if(getInput(IN3_3_SWITCH) || runtimedata.Virtual_Btn[IN3_3_SWITCH]){
-                setOutput(OUT5_SOL3_BACK, 0);
-                setOutput(OUT4_SOL3_FRONT, 1);
-                runtimedata.system_status = Normal_Btn_3;
-            }
-            else{
-                setOutput(OUT4_SOL3_FRONT, 0);
-                setOutput(OUT5_SOL3_BACK, 1);
-                runtimedata.system_status = Normal_Btn_3;
-            }
-            //-----------------------------------
-            if(getInput(IN4_4_SWITCH) || runtimedata.Virtual_Btn[IN4_4_SWITCH]){
-                setOutput(OUT7_SOL4_BACK, 0);
-                setOutput(OUT6_SOL4_FRONT, 1);
-                runtimedata.system_status = Normal_Btn_4;
-            }
-            else{
-                setOutput(OUT6_SOL4_FRONT, 0);
-                setOutput(OUT7_SOL4_BACK, 1);
-                runtimedata.system_status = Normal_Btn_4;
-            }
-            //-----------------------------------
-            if(getInput(IN5_5_SWITCH) || runtimedata.Virtual_Btn[IN5_5_SWITCH]){
-                setOutput(OUT9_SOL5_BACK, 0);
-                setOutput(OUT8_SOL5_FRONT, 1);
-                runtimedata.system_status = Normal_Btn_5;
-            }
-            else{
-                setOutput(OUT8_SOL5_FRONT, 0);
-                setOutput(OUT9_SOL5_BACK, 1);
-                runtimedata.system_status = Normal_Btn_5;
-            }
-            //-----------------------------------
-            if(!getInput(IN10_3_SENEOR)) {
-                runtimedata.Sensor_345_State[0] = 1;
-                DEBUG(getInput(IN10_3_SENEOR));
-            }
-            if(!getInput(IN11_4_SENEOR)) {
-                runtimedata.Sensor_345_State[1] = 1;
-                DEBUG(getInput(IN11_4_SENEOR));
-            }
-            if(!getInput(IN12_5_SENEOR)) {
-                runtimedata.Sensor_345_State[2] = 1;
-                DEBUG(getInput(IN12_5_SENEOR));
-            }
-            if(runtimedata.Sensor_345_State[0] && runtimedata.Sensor_345_State[1] && runtimedata.Sensor_345_State[2])
-            {
-                if(!getInput(IN5_5_SWITCH) && !runtimedata.Virtual_Btn[IN5_5_SWITCH]
-                    && !getInput(IN4_4_SWITCH) && !runtimedata.Virtual_Btn[IN4_4_SWITCH]
-                    && !getInput(IN3_3_SWITCH) && !runtimedata.Virtual_Btn[IN3_3_SWITCH])
-                    if(getInput(IN10_3_SENEOR) && getInput(IN11_4_SENEOR) && getInput(IN12_5_SENEOR))
-                        if(getInput(IN2_2_SWITCH) || runtimedata.Virtual_Btn[IN2_2_SWITCH])
-                        {
-                            Device_Stop();
-                            runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                            runtimedata.system_status = Normal_Back_Btn_2;
-                        }
-            }
-            break;
-        case 50:
-            if(getInput(IN2_2_SWITCH) || runtimedata.Virtual_Btn[IN2_2_SWITCH]){
-                setOutput(OUT2_SOL2_FRONT, 0);
-                setOutput(OUT3_SOL2_BACK, 1);
-            }
-            else{
-                setOutput(OUT3_SOL2_BACK, 0);
-                setOutput(OUT2_SOL2_FRONT, 1);
-            }
-            if(!getInput(IN8_2_FRONT_SENEOR) && getInput(IN9_2_BACK_SENEOR)){
-                if(!getInput(IN2_2_SWITCH) && !runtimedata.Virtual_Btn[IN2_2_SWITCH])
-                {
-                    setOutput(OUT2_SOL2_FRONT, 0);
-                    setOutput(OUT3_SOL2_BACK, 0);
-                    runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                    runtimedata.system_status = Normal_Back_Btn_1;
-                }
-            }
-            break;
-        case 60:
-            if(getInput(IN1_1_SWITCH) || runtimedata.Virtual_Btn[IN1_1_SWITCH]){
-                setOutput(OUT0_SOL1_FRONT, 0);
-                setOutput(OUT1_SOL1_BACK, 1);
-            }
-            else{
-                setOutput(OUT1_SOL1_BACK, 0);
-                setOutput(OUT0_SOL1_FRONT, 1);
-            }
-            if(!getInput(IN6_1_FRONT_SENEOR) && getInput(IN7_1_BACK_SENEOR)){
-                if(!getInput(IN1_1_SWITCH) && !runtimedata.Virtual_Btn[IN1_1_SWITCH])
-                {
-                    setOutput(OUT0_SOL1_FRONT, 0);
-                    setOutput(OUT1_SOL1_BACK, 0);
-                    runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-                }
-            }
-            break;
-        case 70:
-            Counter_count();
-            runtimedata.system_status = Normal_Count;
-            runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
-            break;
-        case 80:
-            if(!getInput(IN1_1_SWITCH) && !runtimedata.Virtual_Btn[IN1_1_SWITCH])
-                runtimedata.Workindex[WORKINDEX_NORMAL] = 0;
-            break;
-    }
-}
-
-#endif
-
+#if 0//20211116 進行修改先保留舊程式
 void NormalProcess()
 {
     if(runtimedata.preWorkindex[WORKINDEX_NORMAL] != runtimedata.Workindex[WORKINDEX_NORMAL])
@@ -665,6 +491,143 @@ void NormalProcess()
                 buzzerPlay(200);
             }
             break;
+    }
+}
+#endif
+
+void NormalProcess()
+{
+    if(runtimedata.preWorkindex[WORKINDEX_NORMAL] != runtimedata.Workindex[WORKINDEX_NORMAL])
+    {
+        runtimedata.preWorkindex[WORKINDEX_NORMAL] = runtimedata.Workindex[WORKINDEX_NORMAL];
+        DEBUG("WORKINDEX_NORMAL: " + String(runtimedata.preWorkindex[WORKINDEX_NORMAL]));
+    }
+    switch(runtimedata.Workindex[WORKINDEX_NORMAL])
+    {
+        case 0:
+            Device_Stop();
+            for(int i=0; i<3; i++)
+                runtimedata.Sensor_345_State[i] = 0;
+            if(!getInput(IN1_1_SWITCH))
+            {
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 20;
+                runtimedata.system_status = Normal_Free;
+            }
+            break;
+        /*按下按鈕1，再放開按鈕1後-->1汽缸前進-->1汽缸到位-->2汽缸前進-->2汽缸到位*/
+        case 20://按鈕1按下
+            if(getInput(IN1_1_SWITCH))
+            {
+                runtimedata.system_status = Normal_Btn_1;
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 30://放開按鈕1後-->1汽缸前進
+            if (!getInput(IN1_1_SWITCH))
+            {
+                setOutput(OUT1_SOL1_BACK, 0);
+                setOutput(OUT0_SOL1_FRONT, 1);
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 40://等待1汽缸到位-->2汽缸前進
+            if(getInput(IN6_1_FRONT_SENEOR) && !getInput(IN7_1_BACK_SENEOR))
+            {
+                setOutput(OUT2_SOL2_FRONT, 1);
+                setOutput(OUT3_SOL2_BACK, 0);
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 50://等待2汽缸到位
+            if(getInput(IN8_2_FRONT_SENEOR) && !getInput(IN9_2_BACK_SENEOR))
+            {
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        //再按按鈕1，再放開按鈕1後-->2汽缸後退-->2汽缸到位-->1汽缸後退-->1汽缸到位-->計數+1
+        case 60://按鈕1按下
+            if(getInput(IN1_1_SWITCH))
+            {
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 70://放開按鈕1後-->2汽缸後退
+            if(!getInput(IN1_1_SWITCH))
+            {
+                setOutput(OUT2_SOL2_FRONT, 0);
+                setOutput(OUT3_SOL2_BACK, 1);
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 80://等2汽缸到位-->1汽缸後退
+            if(!getInput(IN8_2_FRONT_SENEOR) && getInput(IN9_2_BACK_SENEOR))
+            {
+                setOutput(OUT1_SOL1_BACK, 1);
+                setOutput(OUT0_SOL1_FRONT, 0);
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 90://等到1汽缸到位
+            if(!getInput(IN6_1_FRONT_SENEOR) && getInput(IN7_1_BACK_SENEOR))
+            {
+                runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            }
+            break;
+        case 100:
+            Counter_count();
+            runtimedata.system_status = Normal_Count;
+            runtimedata.Workindex[WORKINDEX_NORMAL] += 10;
+            break;
+        case 110:
+            if(!getInput(IN1_1_SWITCH))
+            {
+                runtimedata.Workindex[WORKINDEX_NORMAL] = 0;
+                buzzerPlay(200);
+            }
+            break;
+    }
+}
+
+void Btn345_Process()
+{
+/*  
+    20211116
+    按鈕3、按鈕4、按鈕5:()
+    按著前進，放開後退(任何時候，手動跟指令都要可使用)
+    若"按鈕3、按鈕4、按鈕5" 手動跟指令需切換，
+    就需要重啟、或是按急停再解除，才能進行切換。
+*/
+    if(getInput(IN3_3_SWITCH) || runtimedata.Virtual_Btn[IN3_3_SWITCH]){
+        setOutput(OUT5_SOL3_BACK, 0);
+        setOutput(OUT4_SOL3_FRONT, 1);
+        runtimedata.system_status = Normal_Btn_3;
+    }
+    else{
+        setOutput(OUT4_SOL3_FRONT, 0);
+        setOutput(OUT5_SOL3_BACK, 1);
+        runtimedata.system_status = Normal_Btn_3;
+    }
+    //-----------------------------------
+    if(getInput(IN4_4_SWITCH) || runtimedata.Virtual_Btn[IN4_4_SWITCH]){
+        setOutput(OUT7_SOL4_BACK, 0);
+        setOutput(OUT6_SOL4_FRONT, 1);
+        runtimedata.system_status = Normal_Btn_4;
+    }
+    else{
+        setOutput(OUT6_SOL4_FRONT, 0);
+        setOutput(OUT7_SOL4_BACK, 1);
+        runtimedata.system_status = Normal_Btn_4;
+    }
+    //-----------------------------------
+    if(getInput(IN5_5_SWITCH) || runtimedata.Virtual_Btn[IN5_5_SWITCH]){
+        setOutput(OUT9_SOL5_BACK, 0);
+        setOutput(OUT8_SOL5_FRONT, 1);
+        runtimedata.system_status = Normal_Btn_5;
+    }
+    else{
+        setOutput(OUT8_SOL5_FRONT, 0);
+        setOutput(OUT9_SOL5_BACK, 1);
+        runtimedata.system_status = Normal_Btn_5;
     }
 }
 
